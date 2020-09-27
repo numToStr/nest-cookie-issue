@@ -26,7 +26,7 @@ npm run dev
 
 ## Bug Reproduction
 
-#### Sets a cookie named `hello`
+#### Sets a cookie named `hello` with value `world`
 
 ```sh
 curl http://localhost:5000/set-cookie
