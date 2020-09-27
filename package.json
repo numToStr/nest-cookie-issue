@@ -1,0 +1,47 @@
+{
+    "name": "nest-cookie-issue",
+    "version": "1.0.0",
+    "description": "nest-cookie-issue",
+    "private": true,
+    "engines": {
+        "node": "^12.16.0"
+    },
+    "scripts": {
+        "start": "NODE_ENV=production NODE_DEBUG=www node src/bin/www.js",
+        "dev": "PORT=5000 NODE_ENV=development NODE_DEBUG=www nodemon -T -P tsconfig.json src/bin/www.ts",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    },
+    "keywords": [],
+    "author": "numtostr <sudo@vikasraj.dev>",
+    "license": "MIT",
+    "dependencies": {
+        "@nestjs/common": "^7.4.4",
+        "@nestjs/core": "^7.4.4",
+        "@nestjs/platform-fastify": "^7.4.4",
+        "class-transformer": "^0.3.1",
+        "class-validator": "^0.12.2",
+        "fastify": "^3.4.1",
+        "fastify-cookie": "^4.1.0",
+        "pino": "^6.6.1",
+        "reflect-metadata": "^0.1.13",
+        "rxjs": "^6.6.3"
+    },
+    "devDependencies": {
+        "@types/node": "^14.11.2",
+        "@types/pino": "^6.3.1",
+        "@typescript-eslint/eslint-plugin": "^4.2.0",
+        "@typescript-eslint/parser": "^4.2.0",
+        "eslint": "^7.10.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.12.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "nodemon": "^2.0.4",
+        "pino-pretty": "^4.2.1",
+        "prettier": "^2.1.2",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.0.3"
+    }
+}
